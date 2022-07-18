@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_trackerpage"
+    android:background="@drawable/login_background"
+    >
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="599dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-214dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="67"
+        android:progressDrawable="@drawable/bent_line"
+        android:rotationX="180" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnMessage"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/txtWelcome"
+            android:layout_width="378dp"
+            android:layout_height="186dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="430dp"
+            android:text="Route"
+            android:textColorHint="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTrack"
+        android:layout_width="248dp"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+
+
+        android:background="@drawable/rounded_circle_button"
+        android:text="track"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btnMessage"
+        android:layout_width="248dp"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnTrack"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_circle_button"
+        android:text="message"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="248dp"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnMessage"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_circle_button"
+        android:text="contact"
+        android:textSize="12sp" />
+
+</RelativeLayout>
